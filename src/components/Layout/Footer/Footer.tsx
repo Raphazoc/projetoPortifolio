@@ -1,6 +1,6 @@
 
 import './Footer.css';
-import SocialLinks from '../Links/SocialLinks';
+import SocialLinks from '../../Links/SocialLinks';
 
 export const Footer = () => {
     return (
