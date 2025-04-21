@@ -1,0 +1,60 @@
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #6d6d6d;
+}
+
+.retangulo {
+    width: 1750px;  /* Retângulo horizontal */
+    height: 850px;  /* Maior altura para acomodar o conteúdo */
+    background-color: #fafafa;
+    border-radius: 20px;  /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra para dar profundidade */
+    margin: 20px;  /* Espaçamento externo */
+    position: relative;  /* Para posicionamento absoluto dos filhos */
+
+    /* Centralização de conteúdo dentro do retângulo */
+    display: flex;
+    flex-direction: column;  /* Alinha os elementos verticalmente */
+    align-items: center;  /* Centraliza horizontalmente */
+    justify-content: center;  /* Centraliza verticalmente */
+    color: white;
+    font-size: 18px;
+    text-align: center;  /* Garantir que o texto fique centralizado */
+    padding: 20px;  /* Espaçamento interno */
+}
+
+.fonte {
+    font-size: 24px;  /* Tamanho da fonte */
+    color: #000;  /* Cor do texto */
+    margin-bottom: 20px;  /* Espaçamento inferior */
+}
+
+h1, p {
+    margin: 0; /* Remove margens adicionais de p e h1 */
+}
+
+h1 {
+    margin-top: 150px; /* Movimenta o texto do título para baixo */
+}
+.foto-container {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    background-color: #000; /* Fundo preto ao redor da foto */
+    border-radius: 50% / 40%; /* Formato oval */
+    width: 300px;
+    height: 350px;
+    padding: 5px; /* Espaço para a borda */
+}
+
+.foto-perfil {
+    width: 100%;
+    height: 100%;
+    border-radius: 50% / 40%; /* Faz a imagem seguir o formato oval */
+    object-fit: cover; /* A imagem vai cobrir toda a área sem distorcer */
+    border: 3px solid #000; /* Borda preta ao redor da foto */
+}
