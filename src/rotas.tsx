@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Inicio } from "./components/pages/inicio/Inicio";
 import { Layout } from "./components/Layout/Layout";
+import { Inicio } from "./pages/inicio/Inicio";
+
+
 
 const rotas = createBrowserRouter([
   {
@@ -8,14 +10,6 @@ const rotas = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: (
-          <Layout>
-            <Inicio />
-          </Layout>
-        ),
-      },
-      {
-        path: "/projetos",
         element: (
           <Layout>
             <Inicio />
