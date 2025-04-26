@@ -8,23 +8,29 @@
 }
 
 .retangulo {
-    width: 1750px;  /* Retângulo horizontal */
-    height: 850px;  /* Maior altura para acomodar o conteúdo */
+    width: 90%;
+    max-width: 1750px;
+    min-height: 850px;
+    height: auto;
     background-color: #fafafa;
-    border-radius: 20px;  /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra para dar profundidade */
-    margin: 20px;  /* Espaçamento externo */
-    position: relative;  /* Para posicionamento absoluto dos filhos */
-
-    /* Centralização de conteúdo dentro do retângulo */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-direction: column;  /* Alinha os elementos verticalmente */
-    align-items: center;  /* Centraliza horizontalmente */
-    justify-content: center;  /* Centraliza verticalmente */
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
     color: white;
-    font-size: 18px;
-    text-align: center;  /* Garantir que o texto fique centralizado */
-    padding: 20px;  /* Espaçamento interno */
+    margin: 20px auto;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+    .retangulo {
+        min-height: auto;          /* deixa altura mais flexível */
+        padding: 15px;              /* padding menor pra não esmagar */
+        border-radius: 10px;        /* cantos mais discretos */
+    }
 }
 
 .fonte {

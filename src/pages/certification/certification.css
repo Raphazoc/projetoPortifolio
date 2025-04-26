@@ -21,26 +21,50 @@ body, html {
 }
 
 .retangulo {
-  width: 1750px;
-  min-height: 850px; /* Altura mínima para o retângulo */
-  height: auto; /* Deixa o retângulo crescer conforme o conteúdo */
+  width: 90%;
+  max-width: 1750px;
+  min-height: 850px;
+  height: auto;
   background-color: #fafafa;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
-  flex-direction: column; /* Empilha os quadrados em coluna */
-  align-items: center; /* Centraliza os quadrados */
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
   padding: 20px;
   color: white;
+  margin: 20px auto;
 }
 
-.quadrado, .quadrado2, .quadrado3, .quadrado4, .quadrado5, .quadrado6, .quadrado7 {
-  width: 550px;
-  min-height: 350px; /* Altura mínima */
-  height: auto; /* Deixa os quadrados crescerem conforme o conteúdo */
-  background-color: #ff5733; /* Cor padrão para os quadrados */
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+  .retangulo {
+    min-height: auto;          /* deixa altura mais flexível */
+    padding: 15px;              /* padding menor pra não esmagar */
+    border-radius: 10px;        /* cantos mais discretos */
+  }
 }
+
+
+
+.quadrado, .quadrado2, .quadrado3, .quadrado4, .quadrado5, .quadrado6, .quadrado7 {
+  width: 90%;  /* Ajusta a largura para 90% da tela */
+  max-width: 550px; /* Define um limite máximo para o tamanho */
+  min-height: 350px;
+  height: auto;
+  background-color: #ff5733;
+  margin: 10px 0;  /* Adiciona margem para não grudar nas bordas */
+}
+
+@media (max-width: 768px) {
+  .quadrado, .quadrado2, .quadrado3, .quadrado4, .quadrado5, .quadrado6, .quadrado7 {
+    width: 100%;  /* Para telas menores, ocupa toda a largura */
+    max-width: none;  /* Remove o limite máximo de largura */
+    min-height: 250px; /* Ajuste para uma altura mínima menor em telas pequenas */
+  }
+}
+
 
 .quadrado2 {
   background-color: #33ff57;
