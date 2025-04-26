@@ -1,4 +1,4 @@
-import './../Layout/Layout.css';
+import './Layout.css';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -7,10 +7,9 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="layout">
       <header className="header">
-        <div className="logo">Raphael Martins Pimenta</div>
         <nav className="nav-links">
           <Link to="/">Início</Link>
-          <Link to="/projetos">Projetos</Link>
+          <Link to="/certification">Certificados</Link>
         </nav>
       </header>
 

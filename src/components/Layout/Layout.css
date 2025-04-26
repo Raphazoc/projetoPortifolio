@@ -1,13 +1,15 @@
 .header {
-    background-color: #232323; /* Laranja mais estiloso */
-    padding: 10px;
-    margin: 0 0 20px 0;
+    background-color: #232323;
+    padding: 10px 20px;
     border-radius: 0 0 8px 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap; /* Permite quebra em telas menores */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -48,8 +50,11 @@
     color: #fff;
     width: 100%;
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo principal */
+    justify-content: center;
+    flex-wrap: wrap; /* Mesma pegada, quebra se precisar */
+    box-sizing: border-box;
 }
+
 
 .footer-content {
     display: flex;
@@ -88,5 +93,25 @@ a {
     outline: none;
     box-shadow: none;
   }
+  
+  @media (max-width: 600px) {
+    .header, .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.layout {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
   
   

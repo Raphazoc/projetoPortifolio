@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Para garantir que o corpo ocupe toda a altura da tela */
+  font-family: sans-serif;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  height: 100%; /* Faz o container ocupar toda a altura disponível */
+  
+}
+
+.retangulo {
+  width: 1750px;
+  min-height: 850px; /* Altura mínima para o retângulo */
+  height: auto; /* Deixa o retângulo crescer conforme o conteúdo */
+  background-color: #fafafa;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column; /* Empilha os quadrados em coluna */
+  align-items: center; /* Centraliza os quadrados */
+  gap: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.quadrado, .quadrado2, .quadrado3, .quadrado4, .quadrado5, .quadrado6, .quadrado7 {
+  width: 550px;
+  min-height: 350px; /* Altura mínima */
+  height: auto; /* Deixa os quadrados crescerem conforme o conteúdo */
+  background-color: #ff5733; /* Cor padrão para os quadrados */
+}
+
+.quadrado2 {
+  background-color: #33ff57;
+}
+
+.quadrado3 {
+  background-color: #3357ff;
+}
+
+.quadrado4 {
+  background-color: #ff33a1;
+}
+
+.quadrado5 {
+  background-color: #ff33f6;
+}
+
+.quadrado6 {
+  background-color: #f6ff33;
+}
+.quadrado7 {
+  background-color: #33fff6;
+}

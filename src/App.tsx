@@ -1,4 +1,4 @@
-import "./components/pages/global.css";
+import "./global.css";
 import { RouterProvider } from "react-router-dom";
 import rotas from "./rotas";
 

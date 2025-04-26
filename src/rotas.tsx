@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Layout } from "./components/Layout/Layout";
+import { Layout } from "./components/layout/Layout";
 import { Inicio } from "./pages/inicio/Inicio";
+import { Certification } from "./pages/certification/certification";
 
 
 
@@ -13,6 +14,14 @@ const rotas = createBrowserRouter([
         element: (
           <Layout>
             <Inicio />
+          </Layout>
+        ),
+      },
+      {
+        path: "/certification",
+        element: (
+          <Layout>
+            <Certification />
           </Layout>
         ),
       },
